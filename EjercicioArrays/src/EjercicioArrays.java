@@ -89,10 +89,10 @@ public class EjercicioArrays extends JFrame {
 		botonGuardar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				try{
-					arrayNumeros[0]=Integer.parseInt(num1.getText());
-					arrayNumeros[1]=Integer.parseInt(num2.getText());
-					arrayNumeros[2]=Integer.parseInt(num3.getText());
-					guardarfichero();
+					int numero1=Integer.parseInt(num1.getText());
+					int numero2=Integer.parseInt(num2.getText());
+					int numero3=Integer.parseInt(num3.getText());
+					guardarNumeros(numero1,numero2,numero3);
 					}
 					catch (NumberFormatException error ){
 						//Añadimos el mensaje que mostrará si hay error.
@@ -127,9 +127,9 @@ public class EjercicioArrays extends JFrame {
 	//Método que guarda 3 números en el array
 	private void guardarNumeros(int numero1,int numero2, int numero3){
 		//Aqui va el contenido
-		numero1=arrayNumeros[0];
-		numero2=arrayNumeros[1];
-		numero3=arrayNumeros[2];
+		arrayNumeros[0]=numero1;
+		arrayNumeros[1]=numero2;
+		arrayNumeros[2]=numero3;
 	
 	}
 }
